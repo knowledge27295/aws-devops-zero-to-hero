@@ -45,11 +45,11 @@ Install
 ```
 helm install aws-load-balancer-controller eks/aws-load-balancer-controller \            
   -n kube-system \
-  --set clusterName=<your-cluster-name> \
+  --set clusterName=demo-cluster \
   --set serviceAccount.create=false \
   --set serviceAccount.name=aws-load-balancer-controller \
-  --set region=<region> \
-  --set vpcId=<your-vpc-id>
+  --set region=us-east-1 \
+  --set vpcId=vpc-0a96b73a4d085c26c
 ```
 
 Verify that the deployments are running.
